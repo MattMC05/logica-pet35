@@ -1,6 +1,6 @@
 programa
 {
-	inclua biblioteca Matematica -->m
+	inclua biblioteca Matematica --> m
 	inclua biblioteca Util
 	
 	funcao inicio()
@@ -20,7 +20,7 @@ programa
 		0 -Sair
 		*/
 
-		inteiro item, burger=0, xBurger=0, fritas=0, refri=0, shake=0, pedido = 1
+		inteiro item, burger=0, xBurger=0, fritas=0, refri=0, shake=0, pedido = 1, b, xB, f, r, s
 		real valorBurger=3.00, valorXBurger=2.50, valorFritas=2.50, valorRefri=1.00, valorShake=3.00, total
 		caracter confirm = 'n'
 
@@ -36,37 +36,42 @@ programa
 		escolha(item){
 			
 			caso 1: escreva("Digite a quantidade de Hambúrgueres: ")
-			leia(burger)
+			leia(b)
 			pedido++
-			escreva(burger, " Hambúrguer(es) adicionado(s) com sucesso")
+			burger+=b
+			escreva(b, " Hambúrguer(es) adicionado(s) com sucesso")
 			Util.aguarde(1500)
 			limpa()
 			pare
 			caso 2: escreva("Digite a quantidade de X-Búrgueres: ")
-			leia(xBurger)
+			leia(xB)
 			pedido++
-			escreva(xBurger, " X-Búrguer(es) adicionado(s) com sucesso")
+			xBurger+=xB
+			escreva(xB, " X-Búrguer(es) adicionado(s) com sucesso")
 			Util.aguarde(1500)
 			limpa()
 			pare
 			caso 3: escreva("Digite a quantidade de Fritas ")
-			leia(fritas)
+			leia(f)
 			pedido++
-			escreva(fritas, " Fritas adicionada(s) com sucesso")
+			fritas+=f
+			escreva(f, " Fritas adicionada(s) com sucesso")
 			Util.aguarde(1500)
 			limpa()
 			pare
 			caso 4: escreva("Digite a quantidade de Refrigerantes ")
-			leia(refri)
+			leia(r)
 			pedido++
-			escreva(refri, " Refrigerante(s) adicionado(s) com sucesso")
+			refri+=r
+			escreva(r, " Refrigerante(s) adicionado(s) com sucesso")
 			Util.aguarde(1500)
 			limpa()
 			pare
 			caso 5: escreva("Digite a quantidade de Shakes ")
-			leia(shake)
+			leia(s)
 			pedido++
-			escreva(shake, " Shake(s) adicionado(s) com sucesso")
+			shake+=s
+			escreva(s, " Shake(s) adicionado(s) com sucesso")
 			limpa()
 			pare
 			caso 0:
@@ -96,7 +101,7 @@ programa
 		//escreva("Você pediu ",quant," itens", " no valor total de ","R$", total,"\n")
 		escreva("Você pediu ",quant," itens:\n")
 		se(burger > 0){
-			escreva(burger," Hambúrguer(es) ... R$:",tBurger, "0\n")
+			escreva(burger," Hambúrguer(es) ... R$:", tBurger, "0\n")
 		}
 		se(xBurger > 0){
 			escreva(xBurger," X-Búrguer(es) ... R$:",tXBurger, "0\n")
@@ -111,8 +116,9 @@ programa
 			escreva(shake," Shake(s) .......... R$:", tShake ,"0\n")
 		}
 		escreva         ("\nNo valor total de .. R$", total,"0\n")
-		//se mesmo pedido 2 vezes, sobrescreve o valor do primeiro. RESOLVA
-		//fazer lista de produtos individuais que não sejam iguais a 0
+		
+		//RESOLVIDO  se mesmo pedido 2 vezes, sobrescreve o valor do primeiro. RESOLVA
+		//RESOLVIDO  fazer lista de produtos individuais que não sejam iguais a 0
 
 	}
 }
@@ -121,7 +127,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 3826; 
+ * @POSICAO-CURSOR = 3866; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
