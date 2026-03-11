@@ -1,17 +1,17 @@
-programa
+/*programa
 {
 	
 	funcao inicio()
 	{
 
-	/*Faça um exercício para leitura de dados de uma eleição 
+	/Faça um exercício para leitura de dados de uma eleição 
 		1 - Candidato - X
 		2 - Candidato - Y
 		3 - Branco
 		0 - Encerrar Votação
 		Qualquer opção diferente anulará o voto
 		No final deverá ser exibido o total de votos
-		e o percentual de voto de todos candidados*/
+		e o percentual de voto de todos candidados/
 
 		inteiro voto, total, canA = 0, canB = 0, Branco = 0, nulo = 0
 
@@ -50,13 +50,13 @@ programa
 		//escreva((canA*100/total*100)/100,"% do total")
 		
 	}
-}
+}*/
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 10; 
+ * @POSICAO-CURSOR = 303; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

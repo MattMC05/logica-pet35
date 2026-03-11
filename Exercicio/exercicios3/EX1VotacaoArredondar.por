@@ -43,11 +43,12 @@ programa
 			limpa()
 			pare
 			caso 0:
-			escreva("Deseja realmente encerrar? (s/n)\n")
+			escreva("Deseja realmente encerrar? (s/n) ")
 			leia(confirm)
-			escreva("\nVotação Encerrada!\n")
-			se(confirm == 'n'){
-				limpa()}
+			se(confirm=='S'){
+				confirm='s'
+			}
+			limpa()
 			pare
 
 			caso contrario: escreva("*Voto nulo*")
@@ -59,7 +60,7 @@ programa
 		
 		}enquanto(confirm != 's')
 		
-		
+		escreva("\nVotação Encerrada!\n")
 		
 		total = canA+canB+branco+nulo
 		real porcentA = canA*100.0/total
@@ -75,7 +76,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2091; 
+ * @POSICAO-CURSOR = 1385; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
